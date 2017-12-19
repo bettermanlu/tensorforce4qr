@@ -1,6 +1,6 @@
 # tensorforce4qr
-tensorforce4qr is an implementation of a query reformulation(https://arxiv.org/abs/1704.04572) .
-It is based on tensorforce framework(https://github.com/reinforceio/tensorforce)
+tensorforce4qr is an implementation of a Query Reformulator(https://arxiv.org/abs/1704.04572) .
+It is based on a  Deep Reinforcement Learning framework tensorforce (https://github.com/reinforceio/tensorforce)
 
 ## Dependencies
 To run the code, you will need:
