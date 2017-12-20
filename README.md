@@ -13,10 +13,14 @@ To run the code, you will need:
 * [tensorflow](https://www.tensorflow.org/)
 
 ## Notes on installation(Linux Ubuntu)
-* If your account does not have the sudo right, try to use pip --user command to install .
-* Note on pylucene installtion
+* If your account does not have the sudo right, try to use **pip --user** command to install .
+
+* pylucene installtion
+
 I mainly followed the instruction: http://bendemott.blogspot.com/2013/11/installing-pylucene-4-451.html
+
 But did some modifications as below.
+
 **1. pylucene-6.5.0/jcc/setup.py**
 ```
 JDK = {
@@ -31,7 +35,8 @@ JDK = {
 }
 ```
 **2.pylucene-6.5.0/Makefile**
-Change below section:
+
+Change below sections:
 
 **From:**
 ```
@@ -52,7 +57,8 @@ JCC=$(PYTHON) -m jcc --shared
 NUM_FILES=8
 ```
 
-**In addtion, due to limited user account access right, install pylucene into current user local lib folder, modify below commands**
+In addtion, due to limited user account access right, install pylucene into current user local lib folder, modify below commands in Makefile:
+
 ```
 INSTALL_DEST:=/home/sixilu2/.local/lib/python2.7/site-packages/
 install: jars
@@ -60,6 +66,7 @@ install: jars
 ```
 
 ## How to run?
+
 1. modify below configuration of **qr_runner.py**:
 ```
 DATA_DIR = '/srv/local/work/sixilu2/sixilu2/github/queryreformulator/QueryReformulator'
