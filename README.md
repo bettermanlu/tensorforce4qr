@@ -67,19 +67,23 @@ install: jars
 
 ## How to run?
 
-1.Download datset from https://drive.google.com/drive/folders/0BwmD_VLjROrfLWk3QmctMXpWRkE
+1.Download datset from [downloaded here](https://drive.google.com/drive/folders/0BwmD_VLjROrfLWk3QmctMXpWRkE?usp=sharing):
 
 Due to large size of dataset files, this project only requires below smaller ones.
 
-**tmsa_dataset.hdf5**: MS Academic dataset: a query is the title of a paper and the ground-truth documents are the papers cited within.
-**msa_corpus.hdf5**: MS Academic corpus: each document consists of a paper title and abstract.
-**D_cbow_pdw_8B.pkl**: A python dictionary pretrained word embeddings from the [Word2Vec tool](https://code.google.com/archive/p/word2vec/).
+ **tmsa_dataset.hdf5**: MS Academic dataset: a query is the title of a paper and the ground-truth documents are the papers cited within.
+ 
+ **msa_corpus.hdf5**: MS Academic corpus: each document consists of a paper title and abstract.
+ 
+ **D_cbow_pdw_8B.pkl**: A python dictionary pretrained word embeddings from the [Word2Vec tool](https://code.google.com/archive/p/word2vec/).
 
 Save them under /srv/local/work/sixilu2/sixilu2/github/queryreformulator/QueryReformulator/data/ folder.
 
 2. modify below configuration of **qr_runner.py**:
+
 ```
 DATA_DIR = '/srv/local/work/sixilu2/sixilu2/github/queryreformulator/QueryReformulator'
 ```
+
 3. run  **python qr_runner.py**
 
