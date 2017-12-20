@@ -71,7 +71,7 @@ install: jars
 
 Due to large size of dataset files, this project only requires below smaller ones.
 
- **tmsa_dataset.hdf5**: MS Academic dataset: a query is the title of a paper and the ground-truth documents are the papers cited within.
+ **msa_dataset.hdf5**: MS Academic dataset: a query is the title of a paper and the ground-truth documents are the papers cited within.
  
  **msa_corpus.hdf5**: MS Academic corpus: each document consists of a paper title and abstract.
  
