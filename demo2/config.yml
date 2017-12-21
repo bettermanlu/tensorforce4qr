@@ -1,0 +1,36 @@
+agent:
+  batch_size: 10
+data:
+  base_path: /home/demo/RL/QueryReformulator
+  embedding_dim: 500
+  max_words_input: 15
+  pretrained_embedding_path: /home/demo/RL/QueryReformulator/data/D_cbow_pdw_8B.pkl
+  querydb_size: 10
+  vocab_size: 374557
+model:
+  cnn:
+    filter_sizes_query:
+    - 3
+    - 3
+    filter_sizes_terms:
+    - 9
+    - 3
+    num_dense_nodes_query:
+    - 256
+    - 30
+    num_dense_nodes_terms:
+    - 256
+    - 1
+    num_filters_query:
+    - 256
+    - 256
+    num_filters_terms:
+    - 256
+    - 256
+  loss:
+    alpha: 0.1
+    neg_entropy_lambda: 0.001
+reformulation:
+  max_steps: 3
+search:
+  max_terms: 30
