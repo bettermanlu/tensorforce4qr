@@ -29,7 +29,7 @@ env = QR_ENV(cfg,dset='train',is_train=True,verbose=True)
 # Network as list of layers
 network_spec = [
     dict(type='embedding',indices=374557,size=500),
-	dict(type='expansion'),
+    dict(type='expansion'),
     dict(type='conv2d',size=256,window=3,stride=2),
     dict(type='pool2d',window=2,stride=2),
     dict(type='conv2d',size=256,window=3),
