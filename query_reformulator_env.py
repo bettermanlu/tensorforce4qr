@@ -195,7 +195,7 @@ class QueryReformulatorEnv(Environment):
         Returns: dict of state properties (shape and type).
 
         """
-        return dict(shape=(200,), type='int')
+        return dict(shape=(prm.max_words_input,), type='int')
         
     @property
     def actions(self):
@@ -206,7 +206,7 @@ class QueryReformulatorEnv(Environment):
 
         """
         
-        return dict(shape=(200,), num_actions = 40, type='int')
+        return dict(shape=(prm.max_words_input,), num_actions = prm.max_candidates, type='int')
         #raise NotImplementedError    
 
     
