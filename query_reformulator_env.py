@@ -195,7 +195,7 @@ class QueryReformulatorEnv(Environment):
         Returns: dict of state properties (shape and type).
 
         """
-        return dict(shape=1, type='float')
+        return dict(shape=(200,), type='int')
         
     @property
     def actions(self):
@@ -205,7 +205,8 @@ class QueryReformulatorEnv(Environment):
         Returns: dict of action properties (continuous, number of actions)
 
         """
-        return dict(shape=1, type='float')
+        
+        return dict(shape=(200,), num_actions = 40, type='int')
         #raise NotImplementedError    
 
     
