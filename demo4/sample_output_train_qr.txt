@@ -1,0 +1,171 @@
+Loading queries Dataset...
+Loading queries and docs 0.00646591186523
+10 train examples
+10 valid examples
+10 test examples
+Loading word2vec vocabulary in 1.62063789368
+Vocabulary Size: 374558
+Loading pickled vobac in 1.26359891891
+copying index from /home/demo/RL/QueryReformulator/data/index/ to ./index
+Folder ./index already exists! Doing nothing.
+Loading Title-ID mapping...
+Loading queries and docs 0.000980138778687
+qi =  ['the metabolic code', 'evidence for a black hole and accretion disk in the liner ngc 4203', 'not just what but also when guided automatic pronunciation modeling for broadcast news', 'poleward heat transport by the atmospheric heat engine', 'a multi wavelength study of z 3 15 lyman \xce\xb1 emitters in the goods south field', 'an allometric study of the area dentata in the rat and mouse', 'quasilocal energy for spin net gravity', 'attention and the measurement of perceptual learning', 'self efficacy and cessation of smoking', 'conditioned stimulus intensity and acquired alimentary aversions in the rat']
+qi_i =  [[340991 286251  59561     -2     -2     -2     -2     -2     -2     -2     -2     -2     -2     -2     -2]
+ [153710 338097 318311 157224 127127 253156 164614 360255  92996 340991  71369 218286     -1     -2     -2]
+ [301596 368822 265246  20173  47684 335245 207335  31997 163102 109783 338097 314986 147650     -2     -2]
+ [285622 299480 183988 174771 340991  19988 299480 125304     -2     -2     -2     -2     -2     -2     -2]
+ [318311 263505 177963 246253 113658 231066     -1     -1 110711     -1     -1  23804  92996 340991  92966]
+ [ 12923 264369 246253 113658 340991 318052  90688  92996 340991 229304 253156 177093     -2     -2     -2]
+ [    -1 104174 338097 278909 249247 158625     -2     -2     -2     -2     -2     -2     -2     -2     -2]
+ [ 10532 253156 340991 256704 113658 344171 359268     -2     -2     -2     -2     -2     -2     -2     -2]
+ [327494 261362 253156 233313 113658  51308     -2     -2     -2     -2     -2     -2     -2     -2     -2]
+ [ 92597 137069 240115 253156  80216 128985 270069  92996 340991 229304     -2     -2     -2     -2     -2]]
+qi_lst =  [['the', 'metabolic', 'code', '', '', '', '', '', '', '', '', '', '', '', ''], ['evidence', 'for', 'a', 'black', 'hole', 'and', 'accretion', 'disk', 'in', 'the', 'liner', 'ngc', '4203', '', ''], ['not', 'just', 'what', 'but', 'also', 'when', 'guided', 'automatic', 'pronunciation', 'modeling', 'for', 'broadcast', 'news', '', ''], ['poleward', 'heat', 'transport', 'by', 'the', 'atmospheric', 'heat', 'engine', '', '', '', '', '', '', ''], ['a', 'multi', 'wavelength', 'study', 'of', 'z', '3', '15', 'lyman', '\xce', '\xb1', 'emitters', 'in', 'the', 'goods'], ['an', 'allometric', 'study', 'of', 'the', 'area', 'dentata', 'in', 'the', 'rat', 'and', 'mouse', '', '', ''], ['quasilocal', 'energy', 'for', 'spin', 'net', 'gravity', '', '', '', '', '', '', '', '', ''], ['attention', 'and', 'the', 'measurement', 'of', 'perceptual', 'learning', '', '', '', '', '', '', '', ''], ['self', 'efficacy', 'and', 'cessation', 'of', 'smoking', '', '', '', '', '', '', '', '', ''], ['conditioned', 'stimulus', 'intensity', 'and', 'acquired', 'alimentary', 'aversions', 'in', 'the', 'rat', '', '', '', '', '']]
+D_gt_id =  [[315616 362718 469412 434887     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1]
+ [156013 156372  24286 277801  28944  78078     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1]
+ [464498 464502 463955 464513     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1]
+ [288854 102384 255432 127289 287019 163826 288858 287052 164486 288869 295359     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1]
+ [133222 156047 158244 130177 157533  23272  19905 155787 116556 275955 156098 107011  21717  21720 159814 129454  27232 118481 118482  23598  74992
+  276001  48608 118491  85230 229886 108232  89132  75405 277624 159769  21466 209137 110212  85324 217727 131210  57651 172542 160130 215986  14370
+  246677 119256 253382  10775  75292 109169 213145 109172 113487  85328 188570 267373 278111 205975 267374 267363 165937  67141  30454  28922 155142
+  267375 267376]
+ [384159 384518 470744 384161 384164 470794 384483 461107 394415 342366 460749 384896 394422 394544 394545 390391 454768 394434 365484 455683 437548
+  454876 470799 394441 365241 455222 437259 410539 394460 419401 383354 455539 437205 455955 314840 390431  46890 446256 479875     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1]
+ [112918  89397  15294  15243  89877  63963  72307  63833  90448  64115  63834  50066 112957  70483  15297  15298  15253  15171  89444  15329  89463
+  204108  15332     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1]
+ [ 10269 313196 356203 354682 477105 452153 441059 437741 437742 437743 437744 446122 437745     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1]
+ [463271     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1]
+ [253681 424319 406487 452075 387224 429284 429290 382681 449943 382544 382545 450232 449100 362206 362204 362208     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1
+      -1     -1]]
+current_queries (before calling search.perform) =  [['the', 'metabolic', 'code', '', '', '', '', '', '', '', '', '', '', '', ''], ['evidence', 'for', 'a', 'black', 'hole', 'and', 'accretion', 'disk', 'in', 'the', 'liner', 'ngc', '4203', '', ''], ['not', 'just', 'what', 'but', 'also', 'when', 'guided', 'automatic', 'pronunciation', 'modeling', 'for', 'broadcast', 'news', '', ''], ['poleward', 'heat', 'transport', 'by', 'the', 'atmospheric', 'heat', 'engine', '', '', '', '', '', '', ''], ['a', 'multi', 'wavelength', 'study', 'of', 'z', '3', '15', 'lyman', '\xce', '\xb1', 'emitters', 'in', 'the', 'goods'], ['an', 'allometric', 'study', 'of', 'the', 'area', 'dentata', 'in', 'the', 'rat', 'and', 'mouse', '', '', ''], ['quasilocal', 'energy', 'for', 'spin', 'net', 'gravity', '', '', '', '', '', '', '', '', ''], ['attention', 'and', 'the', 'measurement', 'of', 'perceptual', 'learning', '', '', '', '', '', '', '', ''], ['self', 'efficacy', 'and', 'cessation', 'of', 'smoking', '', '', '', '', '', '', '', '', ''], ['conditioned', 'stimulus', 'intensity', 'and', 'acquired', 'alimentary', 'aversions', 'in', 'the', 'rat', '', '', '', '', '']]
+q_i =  [[340991 286251  59561     -2     -2     -2     -2     -2     -2     -2     -2     -2     -2     -2     -2]
+ [153710 338097 318311 157224 127127 253156 164614 360255  92996 340991  71369 218286     -1     -2     -2]
+ [301596 368822 265246  20173  47684 335245 207335  31997 163102 109783 338097 314986 147650     -2     -2]
+ [285622 299480 183988 174771 340991  19988 299480 125304     -2     -2     -2     -2     -2     -2     -2]
+ [318311 263505 177963 246253 113658 231066     -1     -1 110711     -1     -1  23804  92996 340991  92966]
+ [ 12923 264369 246253 113658 340991 318052  90688  92996 340991 229304 253156 177093     -2     -2     -2]
+ [    -1 104174 338097 278909 249247 158625     -2     -2     -2     -2     -2     -2     -2     -2     -2]
+ [ 10532 253156 340991 256704 113658 344171 359268     -2     -2     -2     -2     -2     -2     -2     -2]
+ [327494 261362 253156 233313 113658  51308     -2     -2     -2     -2     -2     -2     -2     -2     -2]
+ [ 92597 137069 240115 253156  80216 128985 270069  92996 340991 229304     -2     -2     -2     -2     -2]]
+q_m =  [[1.0000 1.0000 1.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000]
+ [1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 0.0000 0.0000]
+ [1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 0.0000 0.0000]
+ [1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000]
+ [1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000]
+ [1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 0.0000 0.0000 0.0000]
+ [1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000]
+ [1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000]
+ [1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000]
+ [1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 0.0000 0.0000 0.0000 0.0000 0.0000]]
+n_iter =  0
+qs =  ['the metabolic code', 'evidence for a black hole and accretion disk in the liner ngc 4203', 'not just what but also when guided automatic pronunciation modeling for broadcast news', 'poleward heat transport by the atmospheric heat engine', 'a multi wavelength study of z 3 15 lyman \xce \xb1 emitters in the goods', 'an allometric study of the area dentata in the rat and mouse', 'quasilocal energy for spin net gravity', 'attention and the measurement of perceptual learning', 'self efficacy and cessation of smoking', 'conditioned stimulus intensity and acquired alimentary aversions in the rat']
+AAA 0 ['the metabolic code', 'evidence for a black hole and accretion disk in the liner ngc 4203', 'not just what but also when guided automatic pronunciation modeling for broadcast news', 'poleward heat transport by the atmospheric heat engine', 'a multi wavelength study of z 3 15 lyman \xce \xb1 emitters in the goods', 'an allometric study of the area dentata in the rat and mouse', 'quasilocal energy for spin net gravity', 'attention and the measurement of perceptual learning', 'self efficacy and cessation of smoking', 'conditioned stimulus intensity and acquired alimentary aversions in the rat'] {0: ['the metabolic code', 'evidence for a black hole and accretion disk in the liner ngc 4203', 'not just what but also when guided automatic pronunciation modeling for broadcast news', 'poleward heat transport by the atmospheric heat engine', 'a multi wavelength study of z 3 15 lyman \xce \xb1 emitters in the goods', 'an allometric study of the area dentata in the rat and mouse', 'quasilocal energy for spin net gravity', 'attention and the measurement of perceptual learning', 'self efficacy and cessation of smoking', 'conditioned stimulus intensity and acquired alimentary aversions in the rat']}
+q =  the metabolic code
+q =  evidence for a black hole and accretion disk in the liner ngc 4203
+q =  not just what but also when guided automatic pronunciation modeling for broadcast news
+q =  poleward heat transport by the atmospheric heat engine
+q =  a multi wavelength study of z 3 15 lyman � � emitters in the goods
+q =  an allometric study of the area dentata in the rat and mouse
+q =  quasilocal energy for spin net gravity
+q =  attention and the measurement of perceptual learning
+q =  self efficacy and cessation of smoking
+q =  conditioned stimulus intensity and acquired alimentary aversions in the rat
+current_queries (after calling search.perform) =  [['the', 'metabolic', 'code', '', '', '', '', '', '', '', '', '', '', '', '', u'motor', u'recovery', u'after', u'acute', u'ischaemic', u'stroke', u'a', u'metabolic', u'study', u'abstract', u'the', u'metabolic', u'changes', u'occurring', u'after'], ['evidence', 'for', 'a', 'black', 'hole', 'and', 'accretion', 'disk', 'in', 'the', 'liner', 'ngc', '4203', '', '', u'evidence', u'for', u'a', u'black', u'hole', u'and', u'accretion', u'disk', u'in', u'the', u'liner', u'ngc', u'4203', u'we', u'present'], ['not', 'just', 'what', 'but', 'also', 'when', 'guided', 'automatic', 'pronunciation', 'modeling', 'for', 'broadcast', 'news', '', '', u'improved', u'acoustic', u'modeling', u'for', u'transcribing', u'arabic', u'broadcast', u'data', u'abstract', u'this', u'paper', u'summarizes', u'our', u'recent', u'progress'], ['poleward', 'heat', 'transport', 'by', 'the', 'atmospheric', 'heat', 'engine', '', '', '', '', '', '', '', u'possible', u'role', u'of', u'oceanic', u'heat', u'transport', u'in', u'early', u'eocene', u'climate', u'abstract', u'increased', u'oceanic', u'heat', u'transport'], ['a', 'multi', 'wavelength', 'study', 'of', 'z', '3', '15', 'lyman', '\xce', '\xb1', 'emitters', 'in', 'the', 'goods', u'a', u'deep', u'hubble', u'and', u'keck', u'search', u'for', u'definitive', u'identification', u'of', u'lyman', u'continuum', u'emitters', u'at', u'z'], ['an', 'allometric', 'study', 'of', 'the', 'area', 'dentata', 'in', 'the', 'rat', 'and', 'mouse', '', '', '', u'quantitative', u'visualization', u'of', u'\u03b3', u'aminobutyric', u'acid', u'receptors', u'in', u'hippocampus', u'and', u'area', u'dentata', u'demonstrated', u'by', u'3h'], ['quasilocal', 'energy', 'for', 'spin', 'net', 'gravity', '', '', '', '', '', '', '', '', '', u'quasilocal', u'energy', u'and', u'conserved', u'charges', u'derived', u'from', u'the', u'gravitational', u'action', u'the', u'quasilocal', u'energy', u'of', u'gravitational'], ['attention', 'and', 'the', 'measurement', 'of', 'perceptual', 'learning', '', '', '', '', '', '', '', '', u'stevens', u'handbook', u'of', u'experimental', u'psychology', u'vol', u'1', u'1', u'neural', u'basis', u'of', u'vision', u'2', u'color', u'vision'], ['self', 'efficacy', 'and', 'cessation', 'of', 'smoking', '', '', '', '', '', '', '', '', '', u'smoking', u'cessation', u'research', '', '', '', '', '', '', '', '', '', '', '', ''], ['conditioned', 'stimulus', 'intensity', 'and', 'acquired', 'alimentary', 'aversions', 'in', 'the', 'rat', '', '', '', '', '', u'acquisition', u'of', u'representation', u'mediated', u'conditioned', u'food', u'aversions', u'food', u'aversions', u'were', u'established', u'in', u'rats', u'by', u'administering']]
+expanded_queries =  [['the', 'metabolic', 'code', '', '', '', '', '', '', '', '', '', '', '', '', u'motor', u'recovery', u'after', u'acute', u'ischaemic', u'stroke', u'a', u'metabolic', u'study', u'abstract', u'the', u'metabolic', u'changes', u'occurring', u'after'], ['evidence', 'for', 'a', 'black', 'hole', 'and', 'accretion', 'disk', 'in', 'the', 'liner', 'ngc', '4203', '', '', u'evidence', u'for', u'a', u'black', u'hole', u'and', u'accretion', u'disk', u'in', u'the', u'liner', u'ngc', u'4203', u'we', u'present'], ['not', 'just', 'what', 'but', 'also', 'when', 'guided', 'automatic', 'pronunciation', 'modeling', 'for', 'broadcast', 'news', '', '', u'improved', u'acoustic', u'modeling', u'for', u'transcribing', u'arabic', u'broadcast', u'data', u'abstract', u'this', u'paper', u'summarizes', u'our', u'recent', u'progress'], ['poleward', 'heat', 'transport', 'by', 'the', 'atmospheric', 'heat', 'engine', '', '', '', '', '', '', '', u'possible', u'role', u'of', u'oceanic', u'heat', u'transport', u'in', u'early', u'eocene', u'climate', u'abstract', u'increased', u'oceanic', u'heat', u'transport'], ['a', 'multi', 'wavelength', 'study', 'of', 'z', '3', '15', 'lyman', '\xce', '\xb1', 'emitters', 'in', 'the', 'goods', u'a', u'deep', u'hubble', u'and', u'keck', u'search', u'for', u'definitive', u'identification', u'of', u'lyman', u'continuum', u'emitters', u'at', u'z'], ['an', 'allometric', 'study', 'of', 'the', 'area', 'dentata', 'in', 'the', 'rat', 'and', 'mouse', '', '', '', u'quantitative', u'visualization', u'of', u'\u03b3', u'aminobutyric', u'acid', u'receptors', u'in', u'hippocampus', u'and', u'area', u'dentata', u'demonstrated', u'by', u'3h'], ['quasilocal', 'energy', 'for', 'spin', 'net', 'gravity', '', '', '', '', '', '', '', '', '', u'quasilocal', u'energy', u'and', u'conserved', u'charges', u'derived', u'from', u'the', u'gravitational', u'action', u'the', u'quasilocal', u'energy', u'of', u'gravitational'], ['attention', 'and', 'the', 'measurement', 'of', 'perceptual', 'learning', '', '', '', '', '', '', '', '', u'stevens', u'handbook', u'of', u'experimental', u'psychology', u'vol', u'1', u'1', u'neural', u'basis', u'of', u'vision', u'2', u'color', u'vision'], ['self', 'efficacy', 'and', 'cessation', 'of', 'smoking', '', '', '', '', '', '', '', '', '', u'smoking', u'cessation', u'research', '', '', '', '', '', '', '', '', '', '', '', ''], ['conditioned', 'stimulus', 'intensity', 'and', 'acquired', 'alimentary', 'aversions', 'in', 'the', 'rat', '', '', '', '', '', u'acquisition', u'of', u'representation', u'mediated', u'conditioned', u'food', u'aversions', u'food', u'aversions', u'were', u'established', u'in', u'rats', u'by', u'administering']]
+reward =  [0.0000 0.0000 0.2500 0.0909 0.0462 0.1538 0.0435 0.0000 1.0000 0.2500]
+2017-12-21 11:47:59.381381: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2017-12-21 11:47:59.528924: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-12-21 11:47:59.529286: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 1080 major: 6 minor: 1 memoryClockRate(GHz): 1.911
+pciBusID: 0000:01:00.0
+totalMemory: 7.92GiB freeMemory: 7.08GiB
+2017-12-21 11:47:59.529297: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080, pci bus id: 0000:01:00.0, compute capability: 6.1)
+Tensor("embedding/ExpandDims:0", shape=(?, 15, 500, 1), dtype=float32)
+Tensor("embedding/ExpandDims_1:0", shape=(?, 30, 500, 1), dtype=float32)
+build the query CNN
+conv block
+input data: (?, 15, 500, 1)
+output of conv1: (?, 8, 250, 256)
+output of maxpool1: (?, 4, 125, 256)
+output of conv2: (?, 2, 63, 256)
+output of conv2: (?, 1, 31, 256)
+build the candidate terms CNN
+conv block
+input data: (?, 30, 500, 1)
+output of conv1: (?, 15, 250, 256)
+output of maxpool1: (?, 7, 125, 256)
+output of conv2: (?, 4, 63, 256)
+output of conv2: (?, 2, 31, 256)
+combined conv results for query network: (?, 3, 31, 256) (?, 23808)
+fc block
+output of fc1: (?, 256)
+output of fc2: (?, 30)
+mean of conv results for candidate terms network: (?, 1, 31, 256)
+combined conv results for candidate terms network: (?, 2, 31, 256) (?, 15872)
+fc block
+output of fc1: (?, 256)
+output of fc2: (?, 1)
+reward_true (?,)
+reward_pred (?, 1)
+prop_pred (?, 30)
+loss ()
+Writing to /home/demo/tensorflow_proj/QR_homework/runs/1513828084
+
+[[340992 286252  59562      0      0      0      0      0      0      0      0      0      0      0      0]
+ [318312 263506 177964 246254 113659 231067 374558 374559 110712 374560  23805  92997 340992  92967 228498]
+ [301597 368823 265247  20174  47685 335246 207336  31998 163103 109784 338098 314987 147651      0      0]
+ [ 12924 264370 246254 113659 340992 318053  90689  92997 340992 229305 253157 177094      0      0      0]
+ [285623 299481 183989 174772 340992  19989 299481 125305      0      0      0      0      0      0      0]
+ [374561 104175 338098 278910 249248 158626      0      0      0      0      0      0      0      0      0]
+ [ 92598 137070 240116 253157  80217 128986 270070  92997 340992 229305      0      0      0      0      0]
+ [327495 261363 253157 233314 113659  51309      0      0      0      0      0      0      0      0      0]
+ [ 10533 253157 340992 256705 113659 344172 359269      0      0      0      0      0      0      0      0]
+ [153711 338098 318312 157225 127128 253157 164615 360256  92997 340992  71370 218287 374562      0      0]]
+[[340992 286252  59562  91463 234803  26111 245306  48783 206896 318312 286252 246254  84141 340992 286252 275557 314364  26111      0      0      0
+       0      0      0      0      0      0      0      0      0]
+ [318312 263506 177964 246254 113659 231067 374558 374559 110712 374560  23805  92997 340992  92967 228498 297311 153711 338098 318312 157225 127128
+  253157 164615 360256  92997 340992  71370 218287 374562 346022]
+ [301597 368823 265247  20174  47685 335246 207336  31998 163103 109784 338098 314987 147651 175940 156323 109784 338098 294616 158801 314987 104443
+   84141 222679  93719  95004 337003 174247 135257      0      0]
+ [ 12924 264370 246254 113659 340992 318053  90689  92997 340992 229305 253157 177094 150725 326353 113659 103975 299481 183989  92997  47865 314354
+  141765  84141 316446 103975 299481 183989      0      0      0]
+ [285623 299481 183989 174772 340992  19989 299481 125305 318312 182681 179552 253157 145027 110906 338098  17174 337197 113659 110712 312712  23805
+  328629 231067      0      0      0      0      0      0      0]
+ [374561 104175 338098 278910 249248 158626 141665 212346 113659  37604  10883 237180  92997 297825 253157 318053  90689  97628 174772      0      0
+       0      0      0      0      0      0      0      0      0]
+ [ 92598 137070 240116 253157  80217 128986 270070  92997 340992 229305 374561 104175 253157 323905 270894 131347 102880 340992  25895 245893 340992
+  374561 104175 113659  25895      0      0      0      0      0]
+ [327495 261363 253157 233314 113659  51309  26959 274665 113659 143273  15940 327685      0      0 147045 332132 113659 232885      0 113484 232885
+       0      0      0      0      0      0      0      0      0]
+ [ 10533 253157 340992 256705 113659 344172 359269  51309 233314 187581      0      0      0      0      0      0      0      0      0      0      0
+       0      0      0      0      0      0      0      0      0]
+ [153711 338098 318312 157225 127128 253157 164615 360256  92997 340992  71370 218287 374562  34838 113659 335478  71284  92598  16116 270070  16116
+  270070 110402 200157  92997  21655 174772  18009      0      0]]
+[1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000]
+2017-12-21T11:48:56.093137: step 1, loss 11474.5
