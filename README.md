@@ -95,5 +95,6 @@ DATA_DIR = '/srv/local/work/sixilu2/sixilu2/github/queryreformulator/QueryReform
 3. run  **python qr_runner.py**
 
 ## Design details
+Please refer to TensorForce4qr_design_document.pdf under this repository.
 For the latest design document,please refer to 
 https://docs.google.com/document/d/10HiHWQJoQcBINGntWygAGJAYGHSVVygZz8eyetWnyHE/
