@@ -1,4 +1,4 @@
-# tensorforce4qr
+# A Query Reformulator based on Tensorforce
 tensorforce4qr is an implementation of a Query Reformulator(https://arxiv.org/abs/1704.04572) .
 It is based on a  Deep Reinforcement Learning framework tensorforce (https://github.com/reinforceio/tensorforce)
 
