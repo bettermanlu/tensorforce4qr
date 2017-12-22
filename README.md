@@ -2,11 +2,13 @@
 tensorforce4qr is an implementation of a Query Reformulator(https://arxiv.org/abs/1704.04572) .
 It is based on a  Deep Reinforcement Learning framework tensorforce (https://github.com/reinforceio/tensorforce)
 
-Originally it is the project for UIUC(MCS-DS) CS410 course. As a team, this repository is just one implementation of our project, another implementation is located at https://github.com/YifanTian/tensorforce_QR.
+Originally it is the project for UIUC(MCS-DS) CS410 course. As a team, this repository is just one implementation of our project, 
 
-The lastest design document can be found at https://docs.google.com/document/d/10HiHWQJoQcBINGntWygAGJAYGHSVVygZz8eyetWnyHE/
+**another implementation is located at https://github.com/YifanTian/tensorforce_QR.**
 
-Our project video presentaiton can be found at https://mediaspace.illinois.edu/media/t/1_edr4fpp3
+**The lastest design document can be found at https://docs.google.com/document/d/10HiHWQJoQcBINGntWygAGJAYGHSVVygZz8eyetWnyHE/**
+
+**Our project video presentaiton can be found at https://mediaspace.illinois.edu/media/t/1_edr4fpp3**
 
 
 ## Dependencies
