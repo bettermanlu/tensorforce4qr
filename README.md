@@ -1,7 +1,13 @@
 # tensorforce4qr
 tensorforce4qr is an implementation of a Query Reformulator(https://arxiv.org/abs/1704.04572) .
 It is based on a  Deep Reinforcement Learning framework tensorforce (https://github.com/reinforceio/tensorforce)
-Originally it is the project for UIUC(MCS-DS) CS410 course.
+
+Originally it is the project for UIUC(MCS-DS) CS410 course. As a team, this repository is just one implementation of our project, another implementation is located at https://github.com/YifanTian/tensorforce_QR.
+
+The lastest design document can be found at https://docs.google.com/document/d/10HiHWQJoQcBINGntWygAGJAYGHSVVygZz8eyetWnyHE/
+
+Our project video presentaiton can be found at https://mediaspace.illinois.edu/media/t/1_edr4fpp3
+
 
 ## Dependencies
 To run the code, you will need:
@@ -89,4 +95,5 @@ DATA_DIR = '/srv/local/work/sixilu2/sixilu2/github/queryreformulator/QueryReform
 3. run  **python qr_runner.py**
 
 ## Design details
-please refer to the TensorForce4qr_design_document.doc.
+For the latest design document,please refer to 
+https://docs.google.com/document/d/10HiHWQJoQcBINGntWygAGJAYGHSVVygZz8eyetWnyHE/
